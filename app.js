@@ -10,6 +10,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // Checking application environment
+//Route setupapp.get('/', (req, res) => {    res.send('root route');
 // console.log(`NODE_ENV: ${process.env.NODE_ENV}`);
 console.log(`NODE_ENV: ${app.get('env')}`);
 
@@ -35,5 +36,5 @@ if (process.env.NODE_ENV == 'production') {
 }
 
 app.listen(port, () => {
-    console.log('Server started at port ' + port);
+    console.log(`server listening on port: ${port}`);
 });
