@@ -5,12 +5,10 @@
   "main": "app.js",
   "author": "",
   "license": "ISC",
-  "scripts": {
-       "client-install": "npm install --prefix client",   
-       "start": "nodemon app.js\"\"cd client && npm start",
+  "scripts": {  
+       "start": "nodemon app.js",
         "server": "nodemon app.js", 
-         "client": "npm start --prefix client", 
-            "heroku-postbuild":      "NPM_CONFIG_PRODUCTION=false npm install --prefix client        && npm run build --prefix client" 
+    
   
   },
   "dependencies": {
